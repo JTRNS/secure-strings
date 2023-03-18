@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2017",
+    "module": "ES2020",
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "lib": ["es2020", "DOM", "DOM.Iterable"],
+    "outDir": "dist",
+    "moduleResolution": "nodenext",
+    "declaration": true,
+    "declarationDir": "@types",
+    "declarationMap": true,
+    "rootDir": "src"
+  },
+  "files": ["src/index.ts"]
+}

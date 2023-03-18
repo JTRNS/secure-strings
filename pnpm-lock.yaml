@@ -1,0 +1,25 @@
+lockfileVersion: 5.4
+
+specifiers:
+  signed-sessions: file:/home/jtrns/dev/repos/signed-sessions/signed-sessions-0.1.0.tgz
+  typescript: ^5.0.2
+
+dependencies:
+  signed-sessions: file:signed-sessions-0.1.0.tgz
+
+devDependencies:
+  typescript: 5.0.2
+
+packages:
+
+  /typescript/5.0.2:
+    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
+    engines: {node: '>=12.20'}
+    hasBin: true
+    dev: true
+
+  file:signed-sessions-0.1.0.tgz:
+    resolution: {integrity: sha512-8cLddomzathZUCavQvR32Nm8YLMszoir2qczcIrWEFKukaYV5jYXCyrxyrAxUAtfp36XOE4T09RpF7wsywn/Hg==, tarball: file:signed-sessions-0.1.0.tgz}
+    name: signed-sessions
+    version: 0.1.0
+    dev: false
