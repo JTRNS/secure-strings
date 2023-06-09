@@ -1,23 +1,23 @@
 {
   "name": "@jtrns/secure-strings",
   "version": "1.0.0",
-  "description": "Browser compatible convenience wrapper for signing and / or encrypting data using Web Crypto API methods.",
-  "main": "dist/index.js",
+  "description": "Browser compatible convenience wrappers for the Web Crypto API.",
+  "main": "dist/src/index.js",
   "scripts": {
-    "build": "tsc -p ./tsconfig.json",
-    "prepublishOnly": "tsc -p ./tsconfig.json"
+    "build": "rm -rf ./dist && tsc -p ./tsconfig.json",
+    "prepare": "rm -rf ./dist && npm run build",
+    "test": "tsc -p ./test/tsconfig.json && node --test"
   },
   "keywords": [],
   "author": "Jeroen Trines <development@trines.info> (https://github.com/JTRNS)",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.2.5",
     "typescript": "^5.0.2"
   },
   "type": "module",
-  "types": "@types",
   "files": [
-    "dist/**/*",
-    "@types/**/*"
+    "dist"
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
